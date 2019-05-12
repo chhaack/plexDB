@@ -1,7 +1,5 @@
 package com.grossertiger.plex;
 
-import org.sqlite.util.StringUtils;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -11,7 +9,7 @@ import java.sql.Statement;
 
 public class PlexDataBase
 {
-    final static String SQL_ALL_SERIES ="SELECT serie.title as title, " +
+    private final static String SQL_ALL_SERIES ="SELECT serie.title as title, " +
                                                 "saison.[index] as season, " +
                                                 "episode.[index] as episode " +
                                         "FROM metadata_items episode " +
