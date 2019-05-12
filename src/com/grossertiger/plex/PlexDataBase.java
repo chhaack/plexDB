@@ -8,9 +8,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+
 public class PlexDataBase
 {
-    final static String SQL_ALL_SERIES ="SELECT serie.title as serientitel, " +
+    final static String SQL_ALL_SERIES ="SELECT serie.title as title, " +
                                                 "saison.[index] as season, " +
                                                 "episode.[index] as episode " +
                                         "FROM metadata_items episode " +
